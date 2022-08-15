@@ -1,45 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: outfit, sans-serif;
 }
 
-body{
-    font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    min-width: 100vh;
+body, .container {
     display: flex;
     align-items: center;
-};
-
-.container{
-    max-width: 360px;
-    margin: 0 auto;
+    justify-content: center;
 }
-
-.card{
-    background-color: hsl(0, 0%, 100%);
-    padding: 18px;
-    border-radius: 17px;
-    text-align: center;
-    margin: 0 1em;
-}
-
-.card img{
+  
+body {
     width: 100%;
-    border-radius: 12px;
+    height: 100vh;
+    background-color: #000;
 }
-
-.text{
-    padding: 22px 10px;
+  
+.container {
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(212deg 45% 89%);
 }
-
-.text h2{
+  
+.card {
+    width: 320px;
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 0px 20px 10px #cedae8;    
+}
+  
+.card > img {
+    width: 100%;
+    height: 290px;
+    border-radius: 10px;
+}
+  
+.card > div {
+    width: 250px;
+    text-align: center;
+    flex-direction: column;
+}
+  
+.card > div > p {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0;
     color: hsl(218, 44%, 22%);
-    padding-bottom: 15px;
 }
-
-.text p{
+  
+.card > div > span {
+    font-size: 15px;
     color: hsl(220, 15%, 55%);
 }
